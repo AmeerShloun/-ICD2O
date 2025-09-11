@@ -8,13 +8,77 @@
   <meta name="author" content="Ameer Shloun">
   <meta name="viewport" content="width=device-width, inital-scale=1.0">
   <title>Lists and Tables</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style2.css">
 </head>
 
 <body style="background-color:rgb(224, 19, 19);">
-  <h1 id="my-header">Style is important</h1>
-  <p style="background-color:#ff00ff;">Proper HTML style is important</p>
-  <img src="./images/HTML-style-guide.jpeg" alt="style">
+  <h1 id="my-header">Steps for infinite pie</h1>
+   <ol>
+   <li>Mix ingredients</li>
+   <li>Put it in the oven</li>
+   <li>burn the food and repeat the steps!</li>
+   </ol>
+  <p style="background-color:#ff00ff;">And take a peak at my table for more detail</p>
+
+<!--This code below describes and creates the table. It even gives it its color-->
+
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+  
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+
+  </head>
+  <body>
+  
+    <h2>Table of Ingredients, When to Use Them, and The Results</h2>
+  
+    <table>
+      <tr>
+        <th>Ingredients</th>
+        <th>What to do</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td>Milk</td>
+        <td>Mix it in the bowl to bake</td>
+        <td>Burn and try again</td>
+      </tr>
+      <tr>
+        <td>Dough</td>
+        <td>Mix into the bowl, use some of it for ribbons, and bake</td>
+        <td>Burn it and try again</td>
+      </tr>
+      <tr>
+        <td>Apples</td>
+        <td>Chop them up and mix, then bake it</td>
+        <td>Burn it and try again</td>
+      </tr>
+      <tr>
+        <td>Flour</td>
+        <td>Mix it in, probably sift first though, in order to bake</td>
+        <td>Burn it and try again</td>
+      </tr>
+      <tr>
+        <td>Sugar</td>
+        <td>Mix it into the bowl in order to bake</td>
+        <td>Burn it and try again</td>
+      </tr>
+   </table>
+
   <p>
     <a href="./cities.html">My cities page</a>
   </p>
