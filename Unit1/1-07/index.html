@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--ICS20 Unit 1-05 HTML Study Guide-->
+<html lang="en.ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="My first webpage, with proper style">
+  <meta name="keywords" content="trh, icd20">
+  <meta name="author" content="Ms.Warriner">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <title>My first webpage, with proper style</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
+</head>
+
+<body style="background-color:powderblue;">
+<!-- The drawer is always open in large screens. The header is always 
+         shown, even in small screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+  <header class="mdl-layout__header">
+    <!-- Top row, always visible -->
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Groggle</span>
+    </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Main Search</a>
+      <a href="#scroll-tab-2" class="mdl-layout__tab">Trending</a>
+      <a href="#scroll-tab-3" class="mdl-layout__tab">Web Store</a>
+    </div>
+  </header>
+<h2>Say, Hi Groggle!</h2>
+<h6>Click below for search!</h6>
+</h6>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Groggle</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Home</a>
+      <a class="mdl-navigation__link" href="">About</a>
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+      <div class="page-content">Click Below!</div>
+      <!-- Simple Textfield -->
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="sample1">
+          <label class="mdl-textfield__label" for="sample1">Search here please...</label>
+          <!-- Colored FAB button with ripple -->
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+            <i class="material-icons">search</i>
+          </button>
+        </form>
+
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+      <div class="page-content">Trends</div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+      <div class="page-content">Buy 1 get 1 free</div>
+    </section>
+  </main>
+</div>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+</html>
