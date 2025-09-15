@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--ICS20 Unit 1-05 HTML Study Guide-->
+<html lang="en.ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Groggle! Your go to Search!">
+  <meta name="keywords" content="trh, icd20">
+  <meta name="author" content="Ameer Shloun">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popular Pet Names</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-amber.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons2/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons2/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons2/favicon-16x16.png">
+  <link rel="manifest" href="./favicons2/site.webmanifest">
+  <link rel="stylesheet" href="css/style2.css">
+
+</head>
+
+<body style="background-color:rgb(9, 242, 5);">
+  <!-- The drawer is always open in large screens. The header is always 
+         shown, even in small screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+    <header class="mdl-layout__header">
+      <!-- Top row, always visible -->
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Pet Names List</span>
+      </div>
+      <!-- Tabs -->
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Main Search</a>
+        <a href="#scroll-tab-2" class="mdl-layout__tab">Trending Names</a>
+        <a href="#scroll-tab-3" class="mdl-layout__tab">Web Store For Pets</a>
+      </div>
+    </header>
+
+    <h2>Welcome to the Pet Name List!</h2>
+    <h6>Click below for search of names and press enter to search!</h6>
+    <h6>The search button next to the search bar shows where we get our info from, Groggle!</h6>
+
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Pet Name List</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Home</a>
+        <a class="mdl-navigation__link" href="">About</a>
+      </nav>
+    </div>
+
+    <main class="mdl-layout__content">
+      <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+        <div class="page-content">Click Below!</div>
+
+        <!-- Simple Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="sample1">
+            <label class="mdl-textfield__label" for="sample1">Search here please...</label>
+          </div>
+
+        <!-- MDL FAB button that links -->
+        <a href="./index.html" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+          <i class="material-icons">search</i>
+        </a>
+
+
+        </form>
+
+      </section>
+
+      <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+      <div id="trending-box" class="page-content">Trending Names</div>
+
+        <!-- MDL List -->
+        <div class="mdl-list">
+          <div class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              Luna
+            </span>
+          </div>
+          <div class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              Milo
+            </span>
+          </div>
+          <div class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              Bella
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+        <div class="page-content">Scroll through for name ideas!</div>
+
+        <!-- MDL Slider -->
+        <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="50" tabindex="0">
+      </section>
+    </main>
+  </div>
+
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+</html>
