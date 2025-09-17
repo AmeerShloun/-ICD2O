@@ -8,7 +8,7 @@
   <meta name="author" content="Ameer Shloun">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Groggle! Your Go To Search!</title>
-  <link rel="stylesheet" href="./css/style2.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-amber.min.css">
 <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
@@ -53,14 +53,17 @@
         <!-- Simple Textfield -->
         <form action="#">
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="sample1">
+            <input id="userinput" class="mdl-textfield__input" type="text" id="sample1">
             <label class="mdl-textfield__label" for="sample1">Search here please...</label>
           </div>
 
           <!-- Colored FAB button with ripple -->
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+          <button id="searchbutton"class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
             <i class="material-icons">search</i>
           </button>
+
+          <button id="clearButton" class="mdl-button mdl-js-button">Clear</button>
+        
         </form>
 
       </section>
@@ -98,5 +101,23 @@
   </div>
 
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script>
+    const button =document.getElementById('searchbutton');
+    const input = document.getElementById('userinput');
+
+    button.addEventListener('click', function () {
+      const q = (input.value || '').trim();
+      const url = 'https://www.google.com/search?q=' + encodeURIComponent(q);
+      window.open(url, '_blank');
+    });
+
+<!--ASK HELP ABOUT THIS BUTTONS DONT WORK)-->
+
+    document.getElementById('clearbutton').addEventListener('click', () => {
+      document.getElementById('userinput).value = '';
+      document.getElementById('userinput').focus();
+    });
+
+  </script>
 </body>
 </html>
