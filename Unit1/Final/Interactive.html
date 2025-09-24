@@ -66,7 +66,7 @@
     searchButton.addEventListener('click', () => {
       const query = (searchInput.value || '').trim();
       if(query !== '') {
-        const url = 'https://www.google.com/search?q=' + encodeURIComponent(query + ' Paris');
+        const url = 'https://www.google.com/search?q=?' + encodeURIComponent(query + ' Paris');
         window.open(url, '_blank');
       }
     });
@@ -78,4 +78,7 @@
     });
   </script>
 </body>
+<img class="main-image" src="./images/search2.jpg" alt="search bar computer"
 </html>
+
+
